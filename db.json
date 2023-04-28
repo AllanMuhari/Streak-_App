@@ -1,0 +1,9 @@
+{
+    "habits": [
+      { "name": "Daily exercise", "date": "2022-01-01" },
+      { "name": "Read a book", "date": "2022-03-15" },
+      { "name": "No smoking", "date": "2022-04-01" },
+      { "name": "Drink more water", "date": "2022-02-20" }
+    ]
+  }
+  
