@@ -74,7 +74,18 @@
                 </div>
                 </div>
         </div>
-
+        <div id="app">
+            <h1>Streak App</h1>
+            <div id="habits-container"></div>
+            <form id="add-habit-form">
+              <label for="habit-input">New Habit:</label>
+              <input type="text" id="habit-input" required>
+              <label for="start-date-input">Start Date:</label>
+              <input type="date" id="start-date-input" required>
+              <button type="submit">Add Habit</button>
+            </form>
+          </div>
     </section>
+    <script src="./dist/app.js"></script>
 </body>
 </html>
