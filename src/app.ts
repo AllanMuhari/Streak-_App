@@ -1,6 +1,6 @@
 interface Habit {
   name: string;
-  startDate: string; // or Date if preferred
+  startDate: string;
 }
 
 class StreakApp {
