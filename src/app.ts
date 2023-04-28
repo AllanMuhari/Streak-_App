@@ -5,7 +5,7 @@ interface Habit {
 
 class StreakApp {
   private habits: Habit[];
-  private habitsContainer: HTMLElement;
+  private habitsContainer: null | HTMLElement;
 
   constructor() {
     this.habits = [];
@@ -26,7 +26,7 @@ class StreakApp {
       <p>Started on ${habit.startDate}</p>
       <p>Streak: ${this.daysSince(new Date(habit.startDate))} days</p>
     `;
-    this.habitsContainer.appendChild(habitElement);
+    this.habitsContainer?.appendChild(habitElement);
   }
 
   private daysSince(date: Date): number {

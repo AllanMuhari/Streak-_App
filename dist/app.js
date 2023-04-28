@@ -10,6 +10,7 @@ class StreakApp {
         this.renderHabit(habit);
     }
     renderHabit(habit) {
+        var _a;
         const habitElement = document.createElement("div");
         habitElement.classList.add("habit");
         habitElement.innerHTML = `
@@ -17,7 +18,7 @@ class StreakApp {
       <p>Started on ${habit.startDate}</p>
       <p>Streak: ${this.daysSince(new Date(habit.startDate))} days</p>
     `;
-        this.habitsContainer.appendChild(habitElement);
+        (_a = this.habitsContainer) === null || _a === void 0 ? void 0 : _a.appendChild(habitElement);
     }
     daysSince(date) {
         const today = new Date();
